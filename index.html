@@ -1,204 +1,487 @@
+
 <!DOCTYPE html>
-<html lang="en">
-
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <title>简历生成器</title>
-    <link rel="stylesheet" href="static/css/style.css">
-    <link rel="stylesheet" href="static/css/remodal/1.1.0/remodal.css">
-    <link rel="stylesheet" href="static/css/remodal/1.1.0/remodal-default-theme.min.css">
-    <script src="static/js/jquery.min.js"></script>
-    <script src="static/js/remodal.min.js"></script>
-    <script src="static/js/script.js"></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>王光辉_项目展示_Android</title>
+    <link href="res/bootstrap.min.css" rel="stylesheet" />
+    <link href="res/bootstrap-theme.min.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+    <script src="res/html5shiv.min.js"></script>
+    <script src="res/respond.min.js"></script>
+    <![endif]-->
+    <link href="res/Project.css" rel="stylesheet" />
 </head>
-
 <body>
-    <div class="container" id="cv">
-        <div class="side">
-            <div class="me">
-                <div class="portrait"></div>
-                <div class="remodal remodal-img" data-remodal-id="portrait-modal">
-                    <h3>请输入图片URL地址：</h3>
-                    <br/>
-                    <input type="text" id="avatar-url">
-                    <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
-                </div>
-                <h1 id="username" >ekCit</h1>
-                <h4 id="persona-tag" >Python / Web / 互联网教育</h4>
-            </div>
-            <div class="profile info-unit">
-                <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">基本信息</span></h2>
-                <hr>
-                <ul class="info-list">
-                    <li>
-                        <label class="left-label">姓名</label><span class="label-value">XXX</span></li>
-                    <li>
-                        <label class="left-label">学历</label><span class="label-value">本科</span></li>
-                    <li>
-                        <label class="left-label">毕业院校</label><span class="label-value">北京邮电大学</span></li>
-                    <li>
-                        <label class="left-label">毕业年份</label><span class="label-value">2017</span></li>
-                </ul>
-            </div>
-            <div class="contact info-unit">
-                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title">联系方式</span></h2>
-                <hr>
-                <ul class="info-list">
-                    <li>
-                        <label class="left-label">手机</label><span class="label-value">182XXXXXXXX</span></li>
-                    <li>
-                        <label class="left-label">邮箱</label><span class="label-value">crmrc2014@gmail.com</span></li>
-                    <li>
-                        <label class="left-label">个人主页</label><span class="label-value">exit-tixe.me</span></li>
-                    <li>
-                        <label class="left-label">Github</label><span class="label-value">github.com/ekCit</span></li>
-                </ul>
-            </div>
-            <div class="skill info-unit">
-                <h2 class="info-header"><i class="iconfont icon-star"></i> <span class="info-title">技能点</span></h2>
-                <hr>
-                <ul class="progress-list">
-                    <li>
-                        <label class="left-label">Python</label>
-                        <progress value="80" max="100"></progress>
-                    </li>
-                    <li>
-                        <label class="left-label">html/css</label>
-                        <progress value="70" max="100"></progress>
-                    </li>
-                    <li>
-                        <label class="left-label">Javascript</label>
-                        <progress value="60" max="100"></progress>
-                    </li>
-                    <li>
-                        <label class="left-label">机器学习</label>
-                        <progress value="60" max="100"></progress>
-                    </li>
-                </ul>
-            </div>
-            <div class="stack info-unit">
-                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title">技术栈</span></h2>
-                <hr>
-                <ul class="stack-list">
-                    <li>
-                        <label class="left-label">前端</label><span class="label-value">jQuery、Angular.js、React.js</span></li>
-                    </li>
-                    <li>
-                        <label class="left-label">后端</label><span class="label-value">Flask、Django、Twisted、Node.js、MongoDB、MySQL、Redis</span></li>
-                    </li>
-                    <li>
-                        <label class="left-label">其它</label><span class="label-value">我全都是瞎写的。</span></li>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="code info-unit">
-                <h2 class="info-header"><i class="iconfont icon-weixin"></i> <span class="info-title">个人微信</span></h2>
-                <hr>
-                <div class="weixin">
-                    <img src="static/image/weixin.png" alt="">
-
-                </div>
-            </div>
-            <div class="remodal remodal-img" data-remodal-id="weixin-modal">
-                <h3>请输入图片URL地址：</h3>
-                <br/>
-                <input type="text" id="weixin-url">
-                <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
-            </div>
+<div class="container project-body">
+    <div class="page-header">
+        <h2>收银系统APP</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/pos/1.png" />
+            </a>
         </div>
-        <div class="main">
-            <div class="education info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title">教育经历</span></h2>
-                <hr>
-                <ul class="experience-list">
-                    <li>
-                        <h3>北京邮电大学 - 网络工程专业（本科）2012-2017</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                    </li>
-                </ul>
+        <div class="col-md-3">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/pos/2.png" />
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/pos/3.png" />
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/pos/4.png" />
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/pos/5.png" />
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/pos/6.png" />
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/pos/7.png" />
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/pos/8.png" />
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/pos/9.png" />
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/pos/10.png" />
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/pos/11.png" />
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/pos/12.png" />
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/pos/s1_1.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/pos/s1.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/pos/s2.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/pos/s3.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/pos/s4.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/pos/s5.png" />
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/pos/s6.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/pos/s7.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/pos/s8.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/pos/s9.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/pos/s10.png" />
+            </a>
+        </div>
+    </div>
+
+
+    <div class="page-header">
+        <h2>购物中心APP</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/yonghuduan/1.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/yonghuduan/2.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/yonghuduan/3.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/yonghuduan/4.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/yonghuduan/5.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/yonghuduan/6.png" />
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/yonghuduan/map1.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/yonghuduan/map2.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/yonghuduan/7.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/yonghuduan/8.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/yonghuduan/9.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/yonghuduan/10.png" />
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/yonghuduan/11.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/yonghuduan/12.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/yonghuduan/13.png" />
+            </a>
+        </div>
+    </div>
+
+
+    <div class="page-header">
+        <h2>商户/商管APP</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/shanghuduan/1.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/shanghuduan/2.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/shanghuduan/3.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/shanghuduan/4.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/shanghuduan/5.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/shanghuduan/6.png" />
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/shanghuduan/7.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/shanghuduan/8.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/shanghuduan/9.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/shanghuduan/10.png" />
+            </a>
+        </div>
+    </div>
+
+
+    <div class="page-header">
+        <h2>金融咖APP</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/jinrongka/1.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/jinrongka/2.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/jinrongka/3.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/jinrongka/4.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/jinrongka/5.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/jinrongka/6.png" />
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/jinrongka/7.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/jinrongka/8.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/jinrongka/9.png" />
+            </a>
+        </div>
+    </div>
+
+    <div class="page-header">
+        <h2>红星美凯龙逛家居APP</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/meikailong/1.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/meikailong/2.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/meikailong/3.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/meikailong/4.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/meikailong/5.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/meikailong/6.png" />
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/meikailong/7.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/meikailong/8.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/meikailong/9.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/meikailong/10.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/meikailong/11.png" />
+            </a>
+        </div>
+    </div>
+
+
+    <div class="page-header">
+        <h2>i流量APP</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/iliuliang/1.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/iliuliang/2.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/iliuliang/3.png" />
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail pic-preview" data-toggle="modal" data-target=".modal-pic-preview">
+                <img src="res/project/iliuliang/4.png" />
+            </a>
+        </div>
+    </div>
+
+</div>
+<div class="modal fade modal-pic-preview" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img class="img-thumbnail" />
             </div>
-            <div class="work info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">工作经历</span></h2>
-                <hr>
-                <ul class="experience-list">
-                    <li>
-                        <h3>北京创客空间－实习生（实习）</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                    </li>
-                    <li>
-                        <h3>实验楼－课程内容（实习）</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    </li>
-                </ul class="experience-list">
-            </div>
-            <div class="project info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">个人项目</span></h2>
-                <hr>
-                <ul class="experience-list">
-                    <li>
-                        <h3>基于 Qt 5 的文本编辑器</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam。Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            <br/>
-                        </p>
-                    </li>
-                    <li>
-                        <h3>基于 Flask 的主机监视系统</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    </li>
-                    <li>
-                        <h3>基于 Live2D 与 clmtrackr 的山寨 Facerig</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    </li>
-                    <li>
-                        <h3>如果项目太少，可以在实验楼上找项目做啊:D</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <div class="trophy info-unit">
-                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">奖项与证书</span></h2>
-                <hr>
-                <ul class="experience-list">
-                    <li>
-                        <h3>小学生作文二等奖</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam。
-                        </p>
-                    </li> 
-                    <li>
-                        <h3>曾获统一冰红茶“再来一瓶”奖</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam。
-                        </p>
-                    </li> 
-                    <li>
-                        <h3>这一行也是为了凑版面</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam。
-                        </p>
-                    </li>                     
-            </div>
-            <div class="aboutme info-unit right-paragraph">
-                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">自我评价</span></h2>
-                <hr>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
             </div>
         </div>
     </div>
+</div>
 </body>
+<script src="res/jquery.js"></script>
+<script src="res/bootstrap.min.js"></script>
+<script>
+    $('.pic-preview').click(function (e) {
+        e.preventDefault();
+        var $previewPic = $(this).find('img');
+        $('.modal-pic-preview').find('img').attr('src', $previewPic.attr('src'));
 
+        var height = $(window).height();
+        if(height >= 1500){
+            height = 1500;
+        }
+        var imageHeight = height * 0.8;
+        $('.modal-pic-preview').find('img').height(imageHeight+"px");
+        $('.modal-pic-preview').find('img').load(function() {
+            var pic_real_width = this.width;   // Note: $(this).width() will not
+            var pic_real_height = this.height; // work for in memory images.
+            var t1= pic_real_height  / imageHeight;
+            //alert(pic_real_height);
+            //alert(imageHeight);
+            //alert(t1);
+            var imageWidth = pic_real_width / (t1 );
+            //alert(pic_real_width);
+            //alert(imageWidth);
+            $('.modal-pic-preview .modal-dialog').width(imageWidth+40 + "px");
+        })
+    });
+    function imgLoaded() {
+        /*var src = $('.modal-pic-preview .img-thumbnail').attr("src");
+        if (src) {
+            var imageWidth = $('.modal-pic-preview .img-thumbnail').width();
+            alert(imageWidth);
+            //$('.modal-pic-preview').width(imageWidth + "px");
+        }*/
+    }
+</script>
 </html>
